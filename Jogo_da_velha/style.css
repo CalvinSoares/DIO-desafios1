@@ -1,0 +1,74 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(255, 255, 255);
+    
+
+}
+
+.quadrado {
+    text-align: center;
+    width: 50px;
+    background: #eee;
+    display: inline-block; /* vai ocupar apenas o espaço do conteudo dele */
+    padding: 40px; /*  */
+    font-size: 60px;
+    margin: 5px;
+    cursor: pointer;
+    color: #eee;
+
+}
+
+.jogador, .vencedor {
+    font-size: 29px;
+    margin-top: 18px;
+}
+
+button {
+    margin: 16px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background: #eee;
+    color: #07664e;
+    text-decoration: none;
+    font-size: 13px;
+    border: 3px solid;
+    position: relative;
+}
+
+button:hover {
+    text-decoration: none;
+}
+
+button::before, button::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: inherit;
+    transition: all .5s;
+
+}
+
+button::before {
+    top: -14px;
+    left: -14px;
+    border-width: 3px 0 0 3px;
+}
+
+button::after {
+    bottom: -14px;
+    right: -14px;
+    border-width: 0 3px 3px 0;
+}
+
+button:hover::before, button:hover::after {
+    width: calc(100% + 25px);
+    height: calc(100% + 25px);
+}
+
+footer {
+
+    
+}
