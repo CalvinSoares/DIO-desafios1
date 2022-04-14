@@ -1,27 +1,22 @@
 body {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background: rgb(255, 255, 255);
-    
-
 }
 
 .quadrado {
     text-align: center;
     width: 50px;
     background: #eee;
-    display: inline-block; /* vai ocupar apenas o espaço do conteudo dele */
-    padding: 40px; /*  */
+    display: inline-block;
+    padding: 40px;
     font-size: 60px;
     margin: 5px;
     cursor: pointer;
     color: #eee;
-
 }
 
 .jogador, .vencedor {
-    font-size: 29px;
-    margin-top: 18px;
+    font-size: 30px;
+    margin-top: 10px;
 }
 
 button {
