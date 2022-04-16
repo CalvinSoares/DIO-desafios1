@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    align-items: center;  
     background-color: aquamarine;
 }
 
@@ -8,7 +8,6 @@ body {
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .genius {
@@ -18,9 +17,10 @@ body {
     grid-gap: 10px;
     border: 1px solid #ffffff;
     background-color: #ffffff;
+    margin-top: 20px;
     border-radius: 100%;
-    width: 700px;
-    height: 700px;
+    width: 650px;
+    height: 650px;
 }
 
 .blue {
@@ -49,4 +49,42 @@ body {
 
 .selected {
     opacity: 0.6;
+}
+
+.iniciar {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    outline: 2px solid #fff;
+    padding: 30px 60px;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+}    
+
+.iniciar:hover {
+    color: #833ab4;
+}
+
+.iniciar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    transform: skew(35deg);
+    z-index: -1;
+    transition: width 1s;
+
+}
+
+.iniciar:hover::before {
+    width: 150%;
 }

@@ -86,11 +86,12 @@ let lose = () => {
 }
 
 //funcao para iniciar
-let playgame = () => {
+let playgame = () => { 
     alert('bem vindo ao Genesis! iniciando novo jogo!');
     score = 0;
 
     nextLevel();
+    
 }
 
 //eventos de clique para as cores
